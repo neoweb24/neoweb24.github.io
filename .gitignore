@@ -1,0 +1,17 @@
+# Игнорируем каталог в корне рабочей директории
+/____Develop (not for production)
+/src/img/640px/
+styles.css
+vanilla.js
+vue-1-gallery.js
+tip_balloon.js
+wz_tooltip.js
+
+
+# Для информации:
+# Косая черта в начале означает, что каталог находится в корне рабочей директории.
+# Косая черта в конце означает каталог, все содержимое которого, будет игнорироваться (включая все файлы и подкаталоги).
+
+# Для справки:
+# https://www.atlassian.com/ru/git/tutorials/saving-changes/gitignore
+# https://ru.hexlet.io/courses/intro_to_git/lessons/gitignore/theory_unit
