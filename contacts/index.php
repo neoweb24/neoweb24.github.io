@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require __DIR__ .'/../config/core.php'; ?><!DOCTYPE html>
 <html lang="uk">
     <head>
         <meta charset="UTF-8">
@@ -6,8 +6,9 @@
         <meta name="description" content="Контактна інформація - Створення сайтів, створення Інтернет магазинів">
         <meta name="keywords" content="створення сайтів створення Інтернет магазинів">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../src/img/favicons/favicon.png">
+        <link rel="icon" type="image/png" href="<?= Host ?>/src/img/favicons/favicon_144px.png">
         <link rel="stylesheet" type="text/css" href="../src/css/jan04/styles.min.css">
+		<link rel="alternate" hreflang="uk" href="https://neoweb.kyiv.ua/contacts/">
         <link rel="alternate" hreflang="ru" href="https://neoweb.kyiv.ua/ru/contacts/">
         <link rel="canonical" href="https://neoweb.kyiv.ua/contacts/">
     </head>
@@ -33,7 +34,7 @@
                     <div data-print-here="phone1"><div class="phone1">*** (***) ***-**-**</div></div>
                     <div data-print-here="email1"><div class="email1">****************</div></div>
 				</div>
-				<div class="open-burger-btn mr-10"><button id="openBurgerBtn"><img src="../src/img/openBurgerBtn_1.png" width="22" height="17" class="img-fluid mx-6" loading="lazy" alt=""></button></div>
+				<div class="open-burger-btn mr-10"><button id="openBurgerBtn"><img src="../src/img/openBurgerBtn_1.png" width="22" height="17" class="img-fluid mx-6" loading="lazy" alt="Відкрити меню"></button></div>
 			</div>
 		</div>
 	</div>
@@ -65,7 +66,7 @@
 				<div class="mr-4px">Телеграм:</div>
 				<div class="flex">
 					<img src="../src/img/telegram_16px.png" width="16" height="16" class="mr-4px" loading="lazy" alt="Телеграм">
-					<div><a href="https://t.me/neowebpro" class="telegram1" title="Телеграм" target="_blank">Neowebpro</a></div>
+					<div><a href="https://t.me/neowebkyiv" class="telegram1" title="Телеграм" target="_blank" rel="nofollow">NeowebKyiv</a></div>
 				</div>
 			</div>
 			<p>			
@@ -89,7 +90,7 @@
         <div class="burger-menu">
             <div class="minh-flexible-1 flex justify-content-space-between align-items-center px-15 mb-6">
                 <img src="../src/img/Neoweb_logo_28px_1.png" width="135" height="28" loading="lazy" class="" alt="Створення сайтів, створення Інтернет магазинів">
-                <div class="closeBtn"><button id="closeBurgerBtn"><img src="../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt=""></button></div>
+                <div class="closeBtn"><button id="closeBurgerBtn"><img src="../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt="Закрити меню"></button></div>
             </div>
             <div class="pt-10">
                 <div class="burger-nav-buttons flex px-15 mb-10">
@@ -107,5 +108,19 @@
 </div><!-- .wrap -->
 
 	<script defer src="../src/js/jan04/vanilla.min.js"></script>
+<?php
+	// Исключить мой ip
+	if($_SERVER['SERVER_NAME'] !== 'neoweb2024') {
+?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVRMKZ8F8C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZVRMKZ8F8C');
+    </script>
+<? } /*require ROOT .'/stat/app/views/counter.min.php';*/ ?>
 </body>
 </html>

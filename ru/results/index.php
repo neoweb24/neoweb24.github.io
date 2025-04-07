@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require __DIR__ .'/../../config/core.php'; ?><!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
@@ -6,9 +6,10 @@
         <meta name="description" content="Результат создания сайтов. Создание сайтов, создание Интернет магазинов">
         <meta name="keywords" content="создание сайтов создание Интернет магазинов">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../../src/img/favicons/favicon.png">
+        <link rel="icon" type="image/png" href="<?= Host ?>/src/img/favicons/favicon_144px.png">
         <link rel="stylesheet" type="text/css" href="../../src/css/jan04/styles.min.css">
         <link rel="alternate" hreflang="uk" href="https://neoweb.kyiv.ua/results/">
+		<link rel="alternate" hreflang="ru" href="https://neoweb.kyiv.ua/ru/results/">
         <link rel="canonical" href="https://neoweb.kyiv.ua/ru/results/">
     </head>
 <body>
@@ -33,7 +34,7 @@
                     <div data-print-here="phone1"><div class="phone1">*** (***) ***-**-**</div></div>
                     <div data-print-here="email1"><div class="email1">****************</div></div>
 				</div>
-				<div class="open-burger-btn mr-10"><button id="openBurgerBtn"><img src="../../src/img/openBurgerBtn_1.png" width="22" height="17" class="img-fluid mx-6" loading="lazy" alt=""></button></div>
+				<div class="open-burger-btn mr-10"><button id="openBurgerBtn"><img src="../../src/img/openBurgerBtn_1.png" width="22" height="17" class="img-fluid mx-6" loading="lazy" alt="Открыть меню"></button></div>
 			</div>
 		</div>
 	</div>
@@ -48,7 +49,7 @@
 				<h2>Сайт фитнес центра E-Motion</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(0)" src="../../src/img/200px/eMotionFitness_1.jpg" width="200" height="211" class="outline-1 br-4 cursor-pointer" alt="Адаптивная верстка сайта-лендинга E-motion Fitness">
+						<img src="../../src/img/200px/eMotionFitness_1.jpg" width="200" height="211" class="outline-1 br-4 cursor-pointer" alt="Адаптивная верстка сайта-лендинга E-motion Fitness" @click="openModal(0)">
 					</div>
 					<div>
 						<script>document.write('<p>Адаптивная верстка сайта-лендинга:<br>HTML5, CSS3, JavaScript.<p>Сделано по заказу Promoburo.<p>')</script>
@@ -61,7 +62,7 @@
 				<h2>Интернет магазин косметики Mary Kay</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(1)" src="../../src/img/200px/mary-kay_2.jpg" width="200" height="156" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина косметики Mary Kay">
+						<img src="../../src/img/200px/mary-kay_2.jpg" width="200" height="156" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина косметики Mary Kay" @click="openModal(1)">
 					</div>
 					<div>
 						<script>document.write('<p>Регистрация доменного имени.<br>Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -74,7 +75,7 @@
 				<h2>Интернет магазин женской косметики "Best For You"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(2)" src="../../src/img/200px/bestforyou_2.jpg" width="200" height="242" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина женской косметики">
+						<img src="../../src/img/200px/bestforyou_2.jpg" width="200" height="242" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина женской косметики" @click="openModal(2)">
 					</div>
 					<div>
 						<script>document.write('<p>Регистрация доменного имени.<br>Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -87,7 +88,7 @@
 				<h2>Cайт компании "Каркас"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(3)" src="../../src/img/200px/karkas_2.jpg" width="200" height="134" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание сайта компании 'Каркас'">
+						<img src="../../src/img/200px/karkas_2.jpg" width="200" height="134" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание сайта компании 'Каркас'" @click="openModal(3)">
 					</div>
 					<div>
 						<script>document.write('<p>Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -100,7 +101,7 @@
 				<h2>Интернет магазин "Климат"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(4)" src="../../src/img/200px/klimat_2.jpg" width="200" height="303" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина 'Климат'">
+						<img src="../../src/img/200px/klimat_2.jpg" width="200" height="303" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина 'Климат'" @click="openModal(4)">
 					</div>
 					<div>
 						<script>document.write('<p>Смена домен-регистратора.<br> Перенос сайта к другому хостинг-провайдеру.<p> Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -113,7 +114,7 @@
 				<h2>Создание системы управления для "Избушка"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(5)" src="../../src/img/200px/izbushka_2.jpg" width="200" height="211" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание системы управления для 'Избушка'">
+						<img src="../../src/img/200px/izbushka_2.jpg" width="200" height="211" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание системы управления для 'Избушка'" @click="openModal(5)">
 					</div>
 					<div>
 						<script>document.write('<p>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -126,7 +127,7 @@
 				<h2>Интернет магазин "Климатшоп"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(6)" src="../../src/img/200px/klimatshop_1.jpg" width="200" height="231" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина 'Климатшоп'">
+						<img src="../../src/img/200px/klimatshop_1.jpg" width="200" height="231" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина 'Климатшоп'" @click="openModal(6)">
 					</div>
 					<div>
 						<script>document.write('<p>Регистрация доменного имени.<br>Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления с применением визуального редактора.<p>')</script>
@@ -139,7 +140,7 @@
 				<h2>Интернет магазин "Автошина"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(7)" src="../../src/img/200px/avtoshina_2.jpg" width="200" height="221" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина Avtoshina.net">
+						<img src="../../src/img/200px/avtoshina_2.jpg" width="200" height="221" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина Avtoshina.net" @click="openModal(7)">
 					</div>
 					<div>
 						<script>document.write('<p>Дизайн.<br>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления.<p>')</script>
@@ -152,7 +153,7 @@
 				<h2>Сайт-лендинг для Cheil Ukraine</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap">
 					<div>
-						<img @click="openModal(8)" src="../../src/img/200px/samsung_1.jpg" width="200" height="268" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Адаптивная верстка сайта-лендинга для Cheil Ukraine (Samsung)">
+						<img src="../../src/img/200px/samsung_1.jpg" width="200" height="268" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Адаптивная верстка сайта-лендинга для Cheil Ukraine (Samsung)" @click="openModal(8)">
 					</div>
 					<div>
 						<script>document.write('<p>Адаптивная верстка лендинга:<br>HTML5, CSS3, JavaScript, JQuery.<br>Сборка: Webpack, Babel, PostCSS (NanoCSS).<p>Сделано для Cheil Ukraine (рекламное подразделение Samsung).<p>')</script>
@@ -165,7 +166,7 @@
 				<h2>Интернет магазин компании "Синко"</h2><p>
 				<div class="flex gap-10-25 portfolio-wrap mb-20">
 					<div>
-						<img @click="openModal(9)" src="../../src/img/200px/sinko_1.jpg" width="200" height="179" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина для компании 'Синко'">
+						<img src="../../src/img/200px/sinko_1.jpg" width="200" height="179" class="outline-1 br-4 cursor-pointer" loading="lazy" alt="Создание Интернет магазина для компании 'Синко'" @click="openModal(9)">
 					</div>
 					<div>
 						<script>document.write('<p>Верстка: HTML+CSS, JavaScript.<br>Программирование: PHP+MySQL.<br>Установка на хостинг.<p>Имеет систему управления.<p>')</script>
@@ -183,7 +184,7 @@
                     <div @click.stop class="dialog__content3 bg-black w100prc h100prc flex flex-direction-column justify-content-space-between user-select-none" v-if="modal1Visible" v-cloak>
                         <div class="flex align-items-center h-60 ml-auto">
                             <div class="font-roboto fs-1-1rem color-2 mr-4px">Esc</div>
-                            <button @click="closeModal()" class="close-btn-round mr-10"><img src="../../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt=""></button>
+                            <button @click="closeModal()" class="close-btn-round mr-10"><img src="../../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt="Закрыть галерею"></button>
                         </div>
                         <div class="flex-grow flex justify-content-center">
                             <div class="flex-grow nav-btn-frame">
@@ -194,8 +195,8 @@
                                     <img :key="id" :src="pathToGraphics + '/' + img.src" :width="img.width" :height="img.height" class="gallery-img br-4" alt="Результат" :alt="img.alt">
                                 </transition>
                             </div>
-                            <div class="flex-grow nav-btn-frame flex justify-content-end ml-auto">
-                                <buttom class="nav-link h100prc flex align-items-center mw-200 w100prc br-10 ml-auto" @click="nextImage()"><div class="nav-btn flex justify-content-center align-items-center mr-20 ml-auto"><img src="../../src/img/next.png" class="" alt="Следующее фото"></div></buttom>
+                            <div class="flex-grow nav-btn-frame flex justify-content-end justify-content-end ml-auto">
+                                <buttom class="nav-link h100prc flex align-items-center justify-content-end mw-200 w100prc br-10 ml-auto" @click="nextImage()"><div class="nav-btn flex justify-content-center align-items-center m-20"><img src="../../src/img/next.png" class="" alt="Следующее фото"></div></buttom>
                             </div>
                         </div>
                         <div class="flex justify-content-center align-items-center h-60">
@@ -232,7 +233,7 @@
         <div class="burger-menu">
             <div class="minh-flexible-1 flex justify-content-space-between align-items-center px-15 mb-6">
                 <img src="../../src/img/Neoweb_logo_28px_1.png" width="135" height="28" loading="lazy" class="" alt="Создание сайтов, создание Интернет магазинов">
-                <div class="closeBtn"><button id="closeBurgerBtn"><img src="../../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt=""></button></div>
+                <div class="closeBtn"><button id="closeBurgerBtn"><img src="../../src/img/closeBtn_18px_1.png" width="18" height="18" loading="lazy" alt="Закрыть меню"></button></div>
             </div>
             <div class="pt-10">
                 <div class="burger-nav-buttons flex px-15 mb-10">
@@ -252,5 +253,19 @@
 	<script defer src="../../src/js/vue-3.2.36/vue.global.prod.js"></script>
 	<script defer src="../../src/js/jan04/vue-1-gallery.min.js"></script>
 	<script defer src="../../src/js/jan04/vanilla.min.js"></script>
+<?php
+	// Исключить мой ip
+	if($_SERVER['SERVER_NAME'] !== 'neoweb2024') {
+?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVRMKZ8F8C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZVRMKZ8F8C');
+    </script>
+<? } /*require ROOT .'/stat/app/views/counter.min.php';*/ ?>
 </body>
 </html>

@@ -1,11 +1,14 @@
 # Игнорируем каталог в корне рабочей директории
 /____Develop (not for production)
 /src/img/640px/
+/config
+/app/data/stat
 styles.css
 vanilla.js
 vue-1-gallery.js
 tip_balloon.js
 wz_tooltip.js
+.htaccess
 
 
 # Для информации:
