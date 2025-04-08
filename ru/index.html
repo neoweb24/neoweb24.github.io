@@ -1,4 +1,4 @@
-<?php require __DIR__ .'/../config/core.php'; ?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
@@ -6,7 +6,7 @@
         <meta name="description" content="Создание сайтов, создание Интернет магазинов">
         <meta name="keywords" content="создание сайтов создание Интернет магазинов">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="<?= Host ?>/src/img/favicons/favicon_144px.png">
+        <link rel="icon" type="image/png" href="../src/img/favicons/favicon_144px.png">
         <link rel="stylesheet" type="text/css" href="../src/css/jan04/styles.min.css">
         <link rel="alternate" hreflang="uk" href="https://neoweb.kyiv.ua">
         <link rel="alternate" hreflang="ru" href="https://neoweb.kyiv.ua/ru/">
@@ -128,10 +128,7 @@
     <script defer src="../src/js/jan04/vanilla.min.js"></script>
     <script defer src="../src/js/wz_tooltip.min.js"></script>
     <script defer src="../src/js/tip_balloon.min.js"></script>
-<?php
-	// Исключить мой ip
-	if($_SERVER['SERVER_NAME'] !== 'neoweb2024') {
-?>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVRMKZ8F8C"></script>
     <script>
@@ -141,6 +138,5 @@
 
     gtag('config', 'G-ZVRMKZ8F8C');
     </script>
-<? } /*require ROOT .'/stat/app/views/counter.min.php';*/ ?>
 </body>
 </html>
