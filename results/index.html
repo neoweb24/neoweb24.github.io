@@ -196,13 +196,13 @@
                             <div class="flex-grow nav-btn-frame">
                                 <buttom class="nav-link h100prc flex align-items-center mw-200 w100prc br-10" @click="previousImage()"><div class="nav-btn flex justify-content-center align-items-center m-20"><img src="../src/img/previous.png" class="" alt="Предыдущее фото"/></div></buttom>
                             </div>
-                            <div class="gallery-img-frame flex align-items-center">
+                            <div class="gallery-img-frame flex justify-content-center align-items-center">
                                 <transition :name="slideEffect" mode="out-in">
                                     <img :key="id" :src="pathToGraphics + '/' + img.src" :width="img.width" :height="img.height" class="gallery-img br-4" alt="Результат" :alt="img.alt">
                                 </transition>
                             </div>
-                            <div class="flex-grow nav-btn-frame flex justify-content-end-mobilebugfix ml-auto">
-                                <buttom class="nav-link h100prc flex justify-content-end-mobilebugfix align-items-center mw-200 w100prc br-10 ml-auto" @click="nextImage()"><div class="nav-btn flex justify-content-center align-items-center m-20"><img src="../src/img/next.png" class="" alt="Следующее фото"></div></buttom>
+                            <div class="flex-grow nav-btn-frame flex justify-content-end ml-auto">
+                                <buttom class="nav-link h100prc flex justify-content-end align-items-center mw-200 w100prc br-10 ml-auto" @click="nextImage()"><div class="nav-btn flex justify-content-center align-items-center m-20"><img src="../src/img/next.png" class="" alt="Следующее фото"></div></buttom>
                             </div>
                         </div>
                         <div class="flex justify-content-center align-items-center h-60">
