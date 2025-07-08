@@ -1,0 +1,7 @@
+Photoshop
+Настроки для экспорта портфолио:
+ - JPG
+ - Quality = 6
+ - Color Space:
+   - Convert to sRGB
+   - Embed Color Profile

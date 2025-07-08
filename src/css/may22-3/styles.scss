@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --min-width-1: 280px;
+    --min-width-1: 290px;
 	--fonts-roboto: -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 	--fonts-SegoeUI: "Segoe UI", Roboto, "Helvetica Neue", -apple-system,BlinkMacSystemFont, Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -161,8 +161,6 @@ body{
 
 .pt-5px { padding-top: 5px; }
 
-.pb-20 { padding-bottom: 20px; }
-
 
 /* .p-10 { padding: 10px; } */
 .p-15 { padding: 15px; }
@@ -181,6 +179,7 @@ body{
 .pb-10 { padding-bottom: 10px; }
 .pb-15 { padding-bottom: 15px; }
 .pb-20 { padding-bottom: 20px; }
+.pb-25 { padding-bottom: 25px; }
 .pb-30 { padding-bottom: 30px; }
 .pb-40 { padding-bottom: 40px; }
 .pb-50 { padding-bottom: 50px; }
@@ -1001,11 +1000,12 @@ color: #919191;
 */
 
 
-@media (max-width: 460px) {
+@media (max-width: 540px) {
     .portfolio-wrap { flex-wrap: wrap; }
 
 	.portfolio-card-bg {
-		background: linear-gradient(to bottom right, transparent 50%, #f1f1f1 100%) repeat-x;
+		background: linear-gradient(to bottom right, transparent 50%, #0000000c 100%) repeat-x;
+		// background: linear-gradient(to bottom right, transparent 50%, #f1f1f1 100%) repeat-x;
 	}
 	.portfolio-card-mx {
 		margin-left: -15px;
