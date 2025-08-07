@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <meta name="description" content="Розробка сайтів та Інтернет магазинів">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="icon" type="image/png" href="src/img/favicons/favicon_144px.png"> -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <link rel="stylesheet" type="text/css" href="src/css/jun1/styles.min.css">
+        <link rel="canonical" href="">
+    </head>
+<body>
+<span id="up"></span>
+<div id="main" class="mw-800 mx-auto p-15"><!-- main div -->
+
+<h1>Test</h1>
+
+<h2>Содержание</h2>
+
+<tableOfContents>
+<a href="#link1" class="" rel="nofollow" title="">Раздел 1</a> //
+<a href="#link2" class="" rel="nofollow" title="">Раздел 2</a> //
+<a href="#link3" class="" rel="nofollow" title="">Раздел 3</a> //
+<a href="#link4" class="" rel="nofollow" title="">Раздел 4</a> //
+<a href="#link5" class="" rel="nofollow" title="">Раздел 5</a> //
+</tableOfContents>
+
+
+<p>
+
+
+
+
+<div id="map" style="width: 600px; height: 400px;"></div>
+<script>
+
+	const map = L.map('map').setView([51.505, -0.09], 13);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	const marker = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+
+	const circle = L.circle([51.508, -0.11], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 500
+	}).addTo(map).bindPopup('I am a circle.');
+
+	const polygon = L.polygon([
+		[51.509, -0.08],
+		[51.503, -0.06],
+		[51.51, -0.047]
+	]).addTo(map).bindPopup('I am a polygon.');
+
+
+	const popup = L.popup()
+		.setLatLng([51.513, -0.09])
+		.setContent('I am a standalone popup.')
+		.openOn(map);
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent(`You clicked the map at ${e.latlng.toString()}`)
+			.openOn(map);
+	}
+
+	map.on('click', onMapClick);
+
+</script>
+
+    
+<p>
+<a href="#up" class="" rel="nofollow" title="">Вверх</a>
+
+</div><!-- main div -->
+
+    <!-- <script defer src="src/js/aug07/vanilla.min.js"></script> -->
+    <script defer src="src/js/aug07/vanilla.js"></script>
+    <!-- Google tag (gtag.js) -->
+</body>
+</html>
