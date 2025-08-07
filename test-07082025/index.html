@@ -33,18 +33,7 @@
 
 <div id="map" style="width: 600px; height: 400px;"></div>
 <script>
-	// var map = L.map('map').setView([51.505, -0.09], 13);
-
-	// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	// 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	// }).addTo(map);
-
-	// L.marker([51.5, -0.09]).addTo(map)
-	// 	.bindPopup('A pretty CSS popup.<br> Easily customizable.')
-	// 	.openPopup();
-
-
-	const map = L.map('map').setView([50.44946, 30.470066], 13);
+	const map = L.map('map').setView([50.44946, 30.470066], 19);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -52,17 +41,13 @@
 	}).addTo(map);
 
 	const marker = L.marker([50.44946, 30.470066]).addTo(map)
-		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+		.bindPopup('<b>Neoweb Kyiv</b><br/>Місто Київ, просп. Берестейський 25<br/>(район КПІ, ст. метро Політехнічний інститут)').openPopup();
 
-	// const popup = L.popup()
-	// 	.setLatLng([51.513, -0.09])
-	// 	.setContent('I am a standalone popup.')
-	// 	.openOn(map);
 
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent(`You clicked the map at ${e.latlng.toString()}`)
+			.setContent(`Вы нажали на карту в таких координатах: ${e.latlng.toString()}`)
 			.openOn(map);
 	}
 
