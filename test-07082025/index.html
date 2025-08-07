@@ -21,8 +21,8 @@
 <h2>Содержание</h2>
 
 <tableOfContents>
-<a href="#link1" class="" rel="nofollow" title="">Раздел 1</a> //
-<a href="#link2" class="" rel="nofollow" title="">Раздел 2</a> //
+<a href="#link1" class="" rel="nofollow" title="">Раздел 1</a><br>
+<a href="#link2" class="" rel="nofollow" title="">Раздел 2</a><br>
 </tableOfContents>
 
 
@@ -31,9 +31,9 @@
 
 
 
-<div id="map" style="width: 600px; height: 400px;"></div>
+<div id="map" class="mw-1024" style="height: 400px;"></div>
 <script>
-	const map = L.map('map').setView([50.44946, 30.470066], 19);
+	const map = L.map('map').setView([50.44946, 30.470066], 7);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -41,8 +41,7 @@
 	}).addTo(map);
 
 	const marker = L.marker([50.44946, 30.470066]).addTo(map)
-		.bindPopup('<b>Neoweb Kyiv</b><br/>Місто Київ, просп. Берестейський 25<br/>(район КПІ, ст. метро Політехнічний інститут)').openPopup();
-
+		.bindPopup('<b>Neoweb</b><br>Україна, Київ<br>просп. Берестейський 25<br>(район КПІ, ст. метро Політехнічний інститут)<br><a href="https://neoweb.kyiv.ua" title="Створення сайтів, створення Інтернет магазинів">neoweb.kyiv.ua</a>').openPopup();
 
 	function onMapClick(e) {
 		popup
