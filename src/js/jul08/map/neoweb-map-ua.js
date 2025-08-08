@@ -1,11 +1,17 @@
-const map = L.map('map').setView([50.451858, 30.470066], 14);
+const mapViewN = 50.451858
+const mapViewE = 30.470066
+const mapViewZoom = 14
+const markerN = 50.44946
+const markerE = mapViewE
+
+const map = L.map('map').setView([mapViewN, mapViewE], mapViewZoom);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-const marker = L.marker([50.44946, 30.470066]).addTo(map)
+const marker = L.marker([markerN, markerE]).addTo(map)
     .bindPopup('<b>Neoweb</b><br>Україна, Київ<br>просп. Берестейський 25<br>(район КПІ, ст. метро Політехнічний інститут)<br><a href="https://neoweb.kyiv.ua" title="Створення сайтів, створення Інтернет магазинів">neoweb.kyiv.ua</a>').openPopup();
 
 // function onMapClick(e) {
