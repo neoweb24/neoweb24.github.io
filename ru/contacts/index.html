@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="../../src/img/favicons/favicon_144px.png">
         <link rel="stylesheet" type="text/css" href="../../src/css/jun08/styles.min.css">
+        <link rel="stylesheet" type="text/css" href="../../src/js/jul08/map/leaflet 1.9.4/leaflet.min.css">
         <link rel="alternate" hreflang="uk" href="https://neoweb.kyiv.ua/contacts/">
 		<link rel="alternate" hreflang="ru" href="https://neoweb.kyiv.ua/ru/contacts/">
         <link rel="canonical" href="https://neoweb.kyiv.ua/ru/contacts/">
@@ -50,9 +51,6 @@
 
 			<h1>Контактная информация</h1><p>
 
-			<div class="mb-4px">
-				Украина, Киев.
-			</div>
 			<div class="grid grid-auto-1fr gap-4-5 mb-15">
 				<div class="mr-4px">Телефон:</div>
 				<div class="flex align-items-flex-end pl-1px">
@@ -75,9 +73,17 @@
 					<div><a href="https://t.me/NeowebService" class="telegram1" title="Телеграм" target="_blank" rel="nofollow">NeowebService</a></div>
 				</div>
 			</div>
-			<p>			
-			Режим работы:<br>
-			9:00-21:00 без виходных.
+
+			<p>	
+            Украина, Киев<br>
+            просп. Берестейский 25<br>
+            (район КПИ, ст. метро Политехнический институт).<p>
+
+            <p>			
+            Режим работы:<br>
+            9:00-21:00 без виходных.
+
+            <div id="map" class="mw-1024 br-6" style="height: 400px;"></div>
 
             <!-- Добавить:
             Приэднуйтесь до нас /Ми в соцмережах.
@@ -121,7 +127,9 @@
     </div><!-- burger-menu -->
 </div><!-- .wrap -->
 
-	<script defer src="../../src/js/jun07/vanilla.min.js"></script>
+	<script defer src="../../src/js/jul08/vanilla.min.js"></script>
+	<script src="../../src/js/jul08/map/leaflet 1.9.4/leaflet.js"></script>
+	<script defer src="../../src/js/jul08/map/neoweb-map-ru.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVRMKZ8F8C"></script>
